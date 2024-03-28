@@ -4,9 +4,9 @@
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
 .env
-
+db.sqlite3
 /static
 
 /api/__pycache__
+/ebdjango/__pycache__
 
-/db.sqlite3
