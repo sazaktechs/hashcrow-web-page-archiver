@@ -17,8 +17,6 @@ import codecs
 import string
 import random
 import boto3
-import requests
-import json
 import re
 from dotenv import load_dotenv
 from rest_framework.response import Response
