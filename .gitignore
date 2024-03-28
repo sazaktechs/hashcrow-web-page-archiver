@@ -8,3 +8,5 @@
 /static
 
 /api/__pycache__
+
+db.sqlite3
