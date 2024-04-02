@@ -15,7 +15,7 @@ Welcome to the Django URL Archiver API repository. This API is built using the D
 This API provides the following endpoints:
 
 1. **Hash URL**
-   - `POST /hashurl?url=<url>
+   - `POST /hashurl?url=<url>`
    - This endpoint receives a URL and archives its content by creating a hash with the SHA256 algorithm.
 
 2. **Check Snapshot**
