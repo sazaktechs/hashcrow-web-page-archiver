@@ -185,10 +185,9 @@ def snapshot_info(request):
     hash_url = {'hash': query_hash, 'url': url_object.url ,"code": url_object.code}
     hash_url.update(data['content'][len(data['content']) - 1])
     all_hash = Hash.objects.filter(url__url = url_object.url)
-    serializer2 = HashSerializer(all_hash, many= True)
-    data2 = serializer2.data
+    data = ""
     message = ""
-    new_dict = [hash_url,data2,message]
+    new_dict = [hash_url, data, message]
     return Response(new_dict)
 
 @api_view()
