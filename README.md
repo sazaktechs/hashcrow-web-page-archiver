@@ -22,9 +22,9 @@ This API provides the following endpoints:
    - `GET /check?url=<url>&hash=<hash>`
    - This endpoint allows you to check an archived snapshot against the current version of the page to verify if it's still up-to-date.
 
-3. **List Archived Pages**
-   - `GET /list?hash=<hash>&code=<code>`
-   - This endpoint provides a list of all archived pages, including their URL, the date of archiving, and the hash value.
+3. **Show Snaphot Info**
+   - `GET /snaphot_info?hash=<hash>&code=<code>`
+   - This endpoint provides the archived page's info.
 
 4. **List Page Snapshots**
    - `GET /listpages?url=<URL>`
