@@ -1,4 +1,4 @@
-# Django URL Archiver API
+# HashCrow Web Page Archiver API
 
 ## Introduction
 
@@ -8,7 +8,6 @@ Welcome to the Django URL Archiver API repository. This API is built using the D
 
 - **URL Archiving**: Archive a given URL by hashing its content with the SHA256 algorithm.
 - **Content Verification**: Check the archived snapshot against the current webpage to ensure it is up-to-date.
-- **Archived Pages List**: Receive a list of all archived pages including their metadata.
 - **Page Snapshots List**: Retrieve a list of snapshots for a given URL, enabling users to see the history of that page's content.
 
 ## How to Use
@@ -16,15 +15,15 @@ Welcome to the Django URL Archiver API repository. This API is built using the D
 This API provides the following endpoints:
 
 1. **Hash URL**
-   - `POST /hashurl`
+   - `POST /hashurl?url=<url>`
    - This endpoint receives a URL and archives its content by creating a hash with the SHA256 algorithm.
 
 2. **Check Snapshot**
-   - `GET /check?snapshot_id=<UUID>`
+   - `GET /check?url=<url>&hash=<hash>`
    - This endpoint allows you to check an archived snapshot against the current version of the page to verify if it's still up-to-date.
 
 3. **List Archived Pages**
-   - `GET /list`
+   - `GET /list?hash=<hash>&code=<code>`
    - This endpoint provides a list of all archived pages, including their URL, the date of archiving, and the hash value.
 
 4. **List Page Snapshots**
@@ -37,7 +36,7 @@ To install this API on your local system, follow these steps:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/username/django-url-archiver-api.git
+   git clone https://github.com/sazaktechs/hashcrow-web-page-archiver.git
    ```
 
 2. Navigate to the cloned repository:
@@ -68,8 +67,4 @@ We welcome contributions from the community. Please feel free to fork the reposi
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
----
-
-Thank you for using or contributing to the Django URL Archiver API!
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
